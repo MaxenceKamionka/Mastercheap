@@ -4,8 +4,12 @@
 
  In short, **Mastercheap** website where you can *compare the prices* of food products between shops to find the cheapest one.
 
-## **What we know we will have to do ?**
+## **What we know we will have to do**
 
 * Implement a database for the products
 * Manage users (accounts)
 * Compare and suggest
+
+### **What you can do**
+
+Try running the little we have with *npm run start* 
