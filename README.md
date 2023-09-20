@@ -9,6 +9,12 @@
 
 **Maxence KAMIONKA**
 
+## **Our Group**
+
+Maxence KAMIONKA
+Romain BILLY
+Noâm DETOURNAY
+
 
 ## **What we know we will have to do.**
 
@@ -18,4 +24,4 @@
 
 ## **What YOU can do !**
 
-Try running the little we have with *npm run start* 
+Try running the little we have with *npm run start* (listening on port 3000)
