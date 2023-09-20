@@ -1,0 +1,272 @@
+@import url("https://fonts.cdnfonts.com/css/berlin-sans-fb-demi");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Berlin Sans FB Demi", sans-serif;
+}
+
+/* Css du header logo, barre de recherche , bouton de navigation */
+body {
+    background-color: #1f2029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    width: 100;
+    user-select: none;
+}
+
+/* Les 2 barres de recherches  */
+::placeholder {
+    color: #ffeba7;
+}
+
+.recherche {
+    font-size: 1.8em;
+    background-color: #2b2a38;
+    border-radius: 20px 0 0 20px;
+    padding-right: 100px;
+    border: 2px solid #2b2a38;
+    padding: 0 10px;
+    vertical-align: middle;
+    float: left;
+    /* pour superposer la gauche de la loupe et la barre de recherche */
+}
+
+input.recherche2 {
+    color: #9b99a3;
+}
+
+.warpper {
+    width: 40%;
+    top: 73%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.recherche2 {
+    width: calc(100% - 100px);
+    /* ajuste la largeur pour tenir compte du padding de droite */
+    font-size: 1.8em;
+    background-color: #2b2a38;
+    border-radius: 20px 0 0 20px;
+    padding-right: 100px;
+    border: 2px solid #2b2a38;
+    padding: 0 10px;
+    vertical-align: middle;
+    float: left;
+    /* pour superposer la gauche de la loupe et la barre de recherche */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+input.recherche {
+    color: #9b99a3;
+}
+
+.loupe {
+    display: inline-block;
+    /* pour aligner loupe et barre de recherche*/
+    font-size: 1.8em;
+    border-radius: 0 20px 20px 0;
+    background-color: #2b2a38;
+    border: 2px solid #2b2a38;
+    color: #ffeba7;
+    cursor: pointer;
+    padding-right: 7px;
+    padding-left: 2px;
+    vertical-align: middle;
+    /* pour aligner loupe et barre de recherche au milieu */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Header  */
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 2em;
+    color: #ffeba7;
+    text-decoration: none;
+    font-weight: 500;
+    /* margin-left: 50px; */
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffeba7;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .vers_connection {
+    width: fit-content;
+    background: #ffeba7;
+    border: 20px solid #ffeba7;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #1f2029;
+    font-weight: 500;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation .vers_connection:hover {
+    background-color: #2b2a38;
+    color: #ffeba7;
+    border: 20px solid #2b2a38;
+
+}
+
+/*connection et creer un compte*/
+.wrapper_connect {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: #2b2a38;
+    border: 3px solid #2b2a38;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_connect .box {
+    width: 100%;
+    padding: 10%;
+}
+
+.box h2 {
+    font-size: 2em;
+    color: #ffeba7;
+    text-align: center;
+}
+
+.inscription {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #9b99a3;
+    margin: 30px 0;
+}
+
+.inscription label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #9b99a3;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inscription input:focus~label,
+.inscription input:valid~label {
+    top: -12px;
+}
+
+.inscription input {
+    width: 100%;
+    height: 100%;
+    background-color: #1f2029;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.3em;
+    color: #9b99a3;
+    padding: 0 35px 0 5px;
+}
+
+.inscription .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #ffeba7;
+    line-height: 50px;
+}
+
+.remember {
+    font-size: 0.9em;
+    color: #ffeba7;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label input {
+    accent-color: #1f2029;
+    margin-right: 5px;
+}
+
+.bouton {
+    width: 100%;
+    height: 45px;
+    background: #ffeba7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #2b2a38;
+    font-weight: 500;
+}
+
+.bouton:hover {
+    background-color: #1f2029;
+    color: #ffeba7;
+}
+
+.vers_creation {
+    font-size: 0.9em;
+    color: #ffeba7;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.vers_creation a {
+    color: #ffeba7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.vers_creation a:hover {
+    text-decoration: ui;
+}
