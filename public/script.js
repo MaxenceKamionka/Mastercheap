@@ -1,5 +1,5 @@
 function fetchData(number) {
-    fetch(`/api/data/${number}`)
+    fetch(`/assignment2/${number}`)
         .then(response => response.json())
         .then(data => {
             document.getElementById('result').innerText = JSON.stringify(data);
