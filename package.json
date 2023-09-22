@@ -2,7 +2,7 @@
     "name": "assignment1",
     "type": "module",
     "scripts": {
-        "start": "nodemon index.js"
+        "start": "node index.js"
     },
     "description": "**Bored to buy your food so expensively ? We have the solution to decrease your food budget !**",
     "version": "1.0.0",
