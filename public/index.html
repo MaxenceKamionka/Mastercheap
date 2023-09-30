@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mastercheap</title>
     <link rel="stylesheet" href="../css/design.css" />
-    <style>
-        p {
-            color: whitesmoke;
-            margin-bottom: 50px;
-        }
-    </style>
 </head>
 
 <body>
@@ -22,22 +16,17 @@
         <nav class="navigation">
             <a href="./index.html">Index</a>
             <a href="./about.html">About</a>
+            <a class="vers_connection" href="./login.html"><i class="fa-regular fa-user"></i> Se connecter</a>
+        </nav>
         </nav>
     </header>
 
-    <p>You can try to use /assignment2/something (I mean a string)</p><br>
-
     <section>
-        <button onclick="fetchData(5)">Fetch Data for 5</button>
-        <button onclick="fetchData(10)">Fetch Data for 10</button>
-        <button onclick="fetchData('Welcome to Mastercheap!')">Welcome to Mastercheap!</button>
-        <div id="result" style="color:whitesmoke"></div>
-        <script src="./script.js">
-        </script>
+        <form action="categorie_produit.html" action="/search/id_product" method="GET">
+            <div class="warpper">
+                <input type="text" id="search2" placeholder="Search" class="search2" required />
+
+            </div>
     </section>
-
-    <p>Multiply by 2 numbers, and keep as it's not one</p>
-
-
 
 </body>

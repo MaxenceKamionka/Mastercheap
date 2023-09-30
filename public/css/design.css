@@ -39,7 +39,7 @@ header {
     color: #ffeba7;
 }
 
-.recherche {
+.search {
     font-size: 1.8em;
     background-color: #2b2a38;
     border-radius: 20px 0 0 20px;
@@ -51,34 +51,34 @@ header {
     /* pour superposer la gauche de la loupe et la barre de recherche */
 }
 
-input.recherche2 {
+input.search2 {
     color: #9b99a3;
 }
 
 .warpper {
-    width: 40%;
-    top: 73%;
+    width: 50%;
+    top: 40%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
-.recherche2 {
-    width: calc(100% - 100px);
+.search2 {
+    width: calc(100%);
     /* ajuste la largeur pour tenir compte du padding de droite */
     font-size: 1.8em;
     background-color: #2b2a38;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 20px 20px;
     padding-right: 100px;
     border: 2px solid #2b2a38;
     padding: 0 10px;
     vertical-align: middle;
-    float: left;
+    /*float: left;
     /* pour superposer la gauche de la loupe et la barre de recherche */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-input.recherche {
+input.search {
     color: #9b99a3;
 }
 
@@ -182,7 +182,7 @@ input.recherche {
 .inscription {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 35px;
     border-bottom: 2px solid #9b99a3;
     margin: 30px 0;
 }
@@ -219,7 +219,7 @@ input.recherche {
     right: 8px;
     font-size: 1.2em;
     color: #ffeba7;
-    line-height: 50px;
+    line-height: 35px;
 }
 
 .remember {
