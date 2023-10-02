@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastercheap</title>
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img alt="sowy" src="../img/Mastercheap.png" width="120" /></a>
+
+        <nav class="navigation">
+            <a href="/">Index</a>
+            <a href="/about.html">About</a>
+            <a class="vers_connection" href="/users/logout"><i class="fa-regular fa-user"></i>Logout</a>
+        </nav>
+        </nav>
+    </header>
+
+
+    <section>
+        <form action="/search/product" method="POST">
+            <div class="warpper">
+                <input type="text" id="search2" placeholder="Search" class="search2" name="product_name" required />
+
+            </div>
+        </form>
+    </section>
+
+    <h1> Hello <%= user %>
+    </h1>
+
+</body>
+
+
+</html>

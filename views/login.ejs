@@ -13,31 +13,31 @@
 
 <body>
     <header>
-        <a class="logo" href="./index.html"><img src="../img/MasterCheap.png" width="150" /></a>
+        <a class="logo" href="/"><img src="../img/MasterCheap.png" width="150" /></a>
 
         <nav class="navigation">
-            <a href="./index.html">Index</a>
-            <a href="./about.html">About</a>
-            <a class="vers_connection" href="./login.html"><i class="fa-regular fa-user"></i>Login</a>
+            <a href="/">Index</a>
+            <a href="/about.html">About</a>
+            <a class="vers_connection" href="/users/login"><i class="fa-regular fa-user"></i>Login</a>
         </nav>
     </header>
     <section>
         <div class="wrapper_connect">
             <div class="box login">
                 <h2>Login</h2>
-                <form action="#">
+                <form action="/users/login" method="POST">
                     <div class="inscription">
                         <span class="icon">
                             <i class="fa-regular fa-envelope" name="mail"></i>
                         </span>
-                        <input type="email" required />
+                        <input type="email" name="user_email" required />
                         <label>Email</label>
                     </div>
                     <div class="inscription">
                         <span class="icon">
                             <i class="fa-solid fa-lock" name="mdp"></i>
                         </span>
-                        <input type="password" required />
+                        <input type="password" name="user_password" required />
                         <label>Password</label>
                     </div>
                     <div class="remember">
@@ -47,12 +47,12 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="bouton" href="../html/index.html">
+                    <button type="submit" class="bouton" href="/">
                         LOGIN
                     </button>
 
                     <div class="vers_creation">
-                        <a href="./register.html"> No account ? Register yourself</a>
+                        <a href="/users/register"> No account ? Register yourself</a>
                     </div>
                 </form>
             </div>
